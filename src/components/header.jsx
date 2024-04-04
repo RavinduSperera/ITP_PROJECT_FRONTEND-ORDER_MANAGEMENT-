@@ -18,9 +18,10 @@ export default function Header() {
             </form>
 
             <ul className='flex gap-4'>
-                <Link to='/view-orders'><li>My Orders</li></Link>
-                <li>Profile</li>
-                <li>Sign-in</li>
+                <Link to='/'><li>Place</li></Link>
+                <Link to='/view-orders'><li>View</li></Link>
+                <Link to='/update-order'><li>Update</li></Link>
+                <Link to='/delete-order'><li>Delete</li></Link>
             </ul>
         </div>
     </header>

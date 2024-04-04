@@ -29,7 +29,17 @@ export default function ViewOrders() {
 
   return (
     <div className='p-3 max-w-lg mx-auto'>
-      <h1 className='text-3xl font-semibold my-7'>View Orders</h1>
+      <h1 className='text-3xl font-semibold my-7'><b>Your Orders</b></h1>
+
+      {/* Deletion notification */}
+      <div className="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+        <span className="block sm:inline">If you want to delete your order, you need to do it within 60 minutes.</span>
+      </div>
+
+      {/* Update notification */}
+      <div className="mb-4 bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative" role="alert">
+        <span className="block sm:inline">Or, if you want to update your order, you also need to do it within 60 minutes.</span>
+      </div>
 
       {/* Search bar */}
       <input
@@ -64,4 +74,3 @@ export default function ViewOrders() {
     </div>
   );
 }
-

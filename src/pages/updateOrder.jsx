@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export default function PlaceOrder() {
+export default function UpdateOrder() {
   return (
     <div className='p-3 max-w-lg mx-auto'>
-      <h1 className='text-3xl font-semibold my-7'><b>Make your Order</b></h1>
+      <h1 className='text-3xl font-semibold my-7'><b>Update your Order</b></h1>
 
       <form className='flex flex-col gap-4'>
         <label>Customer ID</label>
@@ -30,13 +30,15 @@ export default function PlaceOrder() {
 
         <div className='flex gap-4'>
           <Link to='/view-orders'>
-            <button className='bg-slate-950 text-white p-3 rounded-lg uppercase hover:opacity-95'>PLACE ORDER</button>
+            <button className='bg-slate-950 text-white p-3 rounded-lg uppercase hover:opacity-95'>CONFIRM</button>
           </Link>
           <Link>
-            <button className='bg-slate-300 text-red-600 p-3 rounded-lg uppercase hover:opacity-95'>CANCEL</button>
+            <button className='bg-slate-300 text-red-600 p-3 rounded-lg uppercase hover:opacity-95'>BACK</button>
           </Link>
         </div>
       </form>
     </div>
   );
 }
+
+// need to give specific access to the attribute to update, not for all 
