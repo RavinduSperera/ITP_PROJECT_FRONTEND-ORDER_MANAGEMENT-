@@ -6,6 +6,7 @@ export default function Header() {
   return (
     <header className='bg-slate-300 shadow-md'>
         <div className='flex justify-between items-center max-wi-6xl mx-auto p-3'>
+            
             <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
                 <span>UBER</span>
                 <span>shopping</span>
