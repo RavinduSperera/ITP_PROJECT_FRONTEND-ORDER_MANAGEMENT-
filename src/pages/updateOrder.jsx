@@ -30,10 +30,10 @@ export default function UpdateOrder() {
 
         <div className='flex gap-4'>
           <Link to='/view-orders'>
-            <button className='bg-slate-950 text-white p-3 rounded-lg uppercase hover:opacity-95'>CONFIRM</button>
+            <button className='bg-green-600 text-white p-2 rounded-lg hover:bg-green-700'>CONFIRM</button>
           </Link>
           <Link>
-            <button className='bg-slate-300 text-red-600 p-3 rounded-lg uppercase hover:opacity-95'>BACK</button>
+            <button className='bg-gray-300 text-gray-700 p-2 rounded-lg hover:bg-gray-400'>BACK</button>
           </Link>
         </div>
       </form>
